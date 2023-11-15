@@ -13,6 +13,8 @@
 body {
   background-color: var(--bg-color);
   font-family: 'customFont';
+  margin: 0;
+  padding: 0px;
 }
 
 main{
@@ -119,23 +121,14 @@ main{
      
   }
 
-  .helpers-2 {
   
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-     display: flex;
-     flex-direction: row;
-     height: 575px;
-
-  }
   
   
   .helper-1 {
     margin-left: 100px;
     height: 400px;
     width: 350px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(146, 95, 255);
     transition: height 200ms ease;
     text-align: left;
     margin-bottom: 30px;
@@ -162,17 +155,9 @@ main{
     margin-bottom: 30px;
   }
 
-  .helper-4 {
-    margin-left: 100px;
-    height: 400px;
-    width: 350px;
-    background-color: rgb(255, 255, 255);
-    transition: height 200ms ease;
-    text-align: left;
-    margin-bottom: 30px;
-  }
+
   
-  .helper-1:hover, .helper-2:hover {
+  .helper-1:hover, .helper-2:hover,  .helper-3:hover {
     margin-left: 100px;
     height: 500px;
     width: 350px;
@@ -180,30 +165,24 @@ main{
    
   }
 
-  .helper-3:hover, .helper-4:hover {
-    margin-left: 100px;
-    height: 500px;
-    width: 350px;
-    
-   
-  }
   
-  .helper-img-1, .helper-img-2, .helper-img-3, .helper-img-4 {
+  
+  .helper-img-1, .helper-img-2, .helper-img-3 {
    height: 300px;
    width: 350px;
   }
   
-  .helper-role-1, .helper-role-2, .helper-role-3, .helper-role-4 {
+  .helper-role-1, .helper-role-2, .helper-role-3 {
     font-weight: bold;
     margin-left: 20px;
   }
   
-  .helper-name-1, .helper-name-2, .helper-name-3, .helper-name-4 {
+  .helper-name-1, .helper-name-2, .helper-name-3 {
     
     margin-left: 20px;
   }
   
-  .helper-extra-info-1, .helper-extra-info-2, .helper-extra-info-3, .helper-extra-info-4 {
+  .helper-extra-info-1, .helper-extra-info-2, .helper-extra-info-3 {
    margin-top: 50px;
    margin-left: 20px;
    color: transparent;
@@ -212,16 +191,107 @@ main{
               
   }
   
-  .helper-1:hover .helper-extra-info-1, .helper-2:hover .helper-extra-info-2, .helper-3:hover .helper-extra-info-3, .helper-4:hover 
-  .helper-extra-info-4 {
+  .helper-1:hover .helper-extra-info-1, .helper-2:hover .helper-extra-info-2, .helper-3:hover .helper-extra-info-3 {
   
     animation: textAppear 400ms forwards;
    
   }
+
+  .Maps {
+    margin: 0px;
+    padding-top: 10vh;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 20vh;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    
+  }
+  
+  .maps-1, .maps-2, .maps-3 {
+  
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+     display: flex;
+     flex-direction: row;
+     height: 575px;
+ 
+  }
+
+
+  .maps-1, .maps-2, .maps-3 {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    color: white;
+  }
+
+   
+  .map-1 {
+    margin-left: 100px;
+    height: 400px;
+    width: 590px;
+    background-color: rgb(83, 54, 5);
+    transition: height 200ms ease;
+    text-align: left;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  .map-2 {
+    margin-left: 100px;
+    height: 400px;
+    width: 590px;
+    background-color: rgb(3, 84, 0);
+    transition: height 200ms ease;
+    text-align: left;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .map-1:hover, .map-2:hover {
+
+    margin-left: 100px;
+    height: 500px;
+
+    
+   
+  }
+
   
   
+  .map-img-1, .map-img-2 {
+   height: 300px;
+   width: 590px;
+  }
   
+  .map-role-1, .map-role-2 {
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+  }
   
+  .map-name-1, .map-name-2 {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .map-extra-info-1, .map-extra-info-2 {
+   margin-top: 50px;
+   margin-left: 20px;
+   color: transparent;
+              
+              
+  }
+  
+  .map-1:hover .map-extra-info-1,  .map-2:hover .map-extra-info-2 {
+  
+    animation: textAppearWhite 400ms forwards;
+   
+  }
   
   
           @keyframes textAppear {
@@ -232,6 +302,19 @@ main{
                 color: transparent;
               }
               100% {
-                  color: black;
+                color: black;
+
               }
           }
+          @keyframes textAppearWhite {
+            0% {
+                color: transparent;
+            }
+            15%{
+              color: transparent;
+            }
+            100% {
+              color: white;
+
+            }
+        }
